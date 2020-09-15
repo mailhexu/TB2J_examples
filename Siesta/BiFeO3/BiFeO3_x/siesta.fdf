@@ -1,0 +1,86 @@
+SystemName	siesta
+SystemLabel	siesta
+
+CDF.Compress	9
+CDF.Save	True
+MaxSCFIteration	60
+SCF.DM.Tolerance	0.0001
+SCF.EDM.Tolerance	1e-2 eV
+SCF.H.Tolerance	1e-3 eV
+SCF.Mixer.History	16
+SCF.Mixer.Method	Pulay
+SCF.Mixer.Spin	spinor
+SCF.Mixer.Weight	0.4
+SCF.Spin.Fix	True
+SaveHS	True
+Write.DMHS.Netcdf	True
+SCFMustConverge	True
+
+Spin     	spin-orbit
+XC.functional	GGA
+XC.authors	PBE
+
+MeshCutoff	2721.1386024367243	eV
+PAO.EnergyShift	0.1	eV
+
+NumberOfSpecies	3
+NumberOfAtoms	10
+%block ChemicalSpecieslabel
+    1 83 Bi.1
+    2 26 Fe.2
+    3 8 O.3
+%endblock ChemicalSpecieslabel
+
+%block PAO.BasisSizes
+    Bi.1	DZP
+    Fe.2	DZP
+    O.3	DZP
+%endblock PAO.BasisSizes
+
+
+LatticeConstant	1.0 Ang
+%block LatticeVectors
+    3.949538410894042     3.949538410894041     -0.030224333732817 
+    3.949538410894043     0.030224333732817     -3.949538410894041 
+    0.030224333732817     3.949538410894042     -3.949538410894042 
+%endblock LatticeVectors
+
+
+AtomicCoordinatesFormat  Ang
+%block AtomicCoordinatesAndAtomicSpecies
+     0.241348206      0.241348206     -0.241348206 1
+     4.205998784      4.205998784     -4.205998784 1
+     2.016516455      2.016516455     -2.016516455 2
+     5.981167033      5.981167033     -5.981167033 2
+     3.938801224      2.155841314     -5.523769822 3
+     3.953913391      5.538881989     -6.090267558 3
+     2.155841314      5.523769822     -3.938801224 3
+     5.538881989      6.090267558     -3.953913391 3
+     5.523769822      3.938801224     -2.155841314 3
+     6.090267558      3.953913391     -5.538881989 3
+%endblock AtomicCoordinatesAndAtomicSpecies
+
+%block DM.InitSpin
+    3 5.00000000000000
+    4 -5.00000000000000
+%endblock DM.InitSpin
+
+DM.UseSaveDM	True
+
+#KPoint grid
+%block kgrid_Monkhorst_Pack
+     9       0       0  0.0
+     0       9       0  0.0
+     0       0       9  0.0
+%endblock kgrid_Monkhorst_Pack
+
+%block LDAU.Proj
+  Fe.2 1
+  n=3 2 E 50.0 2.5
+  4.0  0.0
+  0.0  0.0
+  0.95
+%endblock LDAU.Proj
+DM.UseSaveDM    True
+
+

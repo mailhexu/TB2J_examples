@@ -1,0 +1,11 @@
+ &INPUTPP
+   outdir               =  './',
+   prefix               =  'SrMnO3',
+   seedname             =  'SrMnO3_up',
+   spin_component	=  'up'
+   write_mmn 		=  .true.
+   write_amn 		=  .true.
+   write_unk            =  .false.
+ /
+
+

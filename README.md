@@ -17,6 +17,12 @@ getJ.sh to get the TB2J results.
  SrMnO3 cubic structure with PBEsol+U , U(Mn)=3eV, 5atom cubic structure with FM state. 
  In the Wannier directory, run get_J.sh to compute the exchange parameters.
 
+### SrMnO3: QE-Wannier (Collinear)
+ SrMnO3 cubic structure with PBE+U , U(Mn)=3eV, 5atom cubic structure with FM state. 
+ In the DFT directory, run run.sh to run the full DFT-W90-TB2J calculation.
+ In the Wannier directory, run get_J.sh to compute the exchange parameters from W90 output.
+
+
 ### SrMnO3: VASP-Wannier (Collinear)
   SrMnO3 cubic structure, with PBE+U, U(Mn)=3eV in 10 atom supercell with G-AFM state.
   Note: in the DFT directory, the POTCAR file is not provided since it is proprietary, 

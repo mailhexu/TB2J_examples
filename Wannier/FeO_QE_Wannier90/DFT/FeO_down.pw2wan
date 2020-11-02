@@ -1,0 +1,11 @@
+ &INPUTPP
+   outdir               =  './tmp',
+   prefix               =  'feo_af',
+   seedname             =  'FeO_down',
+   spin_component	=  'down'
+   write_mmn 		=  .true.
+   write_amn 		=  .true.
+   write_unk            =  .false.
+ /
+
+

@@ -22,6 +22,14 @@ getJ.sh to get the TB2J results.
  In the DFT directory, run run.sh to run the full DFT-W90-TB2J calculation.
  In the Wannier directory, run get_J.sh to compute the exchange parameters from W90 output.
 
+### FeO: QE-Wannier (Collinear)
+ FeO structure with LDA+U , U(Fe)=4eV, with AFM state. 
+ In the DFT directory, run run.sh to run the full DFT-W90-TB2J calculation.
+ In the Wannier directory, run get_J.sh to compute the exchange parameters from W90 output.
+ Note: 1. the initial obital occupation is set in the input to break the orbital symmetry.
+       2. Fe 3d and 4s, O 2p orbital are in the W90 projections. The 4s orbital is to make the Fe 3d orbitals more localized.
+
+
 
 ### SrMnO3: VASP-Wannier (Collinear)
   SrMnO3 cubic structure, with PBE+U, U(Mn)=3eV in 10 atom supercell with G-AFM state.

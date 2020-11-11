@@ -29,6 +29,13 @@ getJ.sh to get the TB2J results.
  Note: 1. the initial obital occupation is set in the input to break the orbital symmetry.
        2. Fe 3d and 4s, O 2p orbital are in the W90 projections. The 4s orbital is to make the Fe 3d orbitals more localized.
 
+### bccFe: QE-Wannier (Collinear)
+  bcc Fe.
+ In the Wannier directory, run get_J.sh to compute the exchange parameters from W90 output.
+ Note: The projected Wannier function is used instead of Maximally localized Wannier functions in order to get atomic centered WF's.
+       The initial projectors are the s, p, and d orbitals.
+       The first NN exchange values are much smaller than using Siesta LCAO basis, and from literature (KKR-Green). 
+
 
 
 ### SrMnO3: VASP-Wannier (Collinear)

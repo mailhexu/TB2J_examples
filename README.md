@@ -43,6 +43,13 @@ getJ.sh to get the TB2J results.
   Note: in the DFT directory, the POTCAR file is not provided since it is proprietary, 
 instead, the names of the paw potentials are in potcar.txt.
 
+
+### CrI3: VASP-Wannier (Non-collinear with SOC).
+  CrI3 monolayer.
+  In the x, y, z directory, the DFT(VASP) and Wannier90 inputs are provided. 
+  Run VASP+Wannier90, and the get_J.sh in each directory, and then run the merge.sh script.
+  Note: in the x y z directories, the POTCAR file is not provided since it is proprietary, 
+
 ## Siesta example
 
 ### BCC Fe: Fe (Collinear)

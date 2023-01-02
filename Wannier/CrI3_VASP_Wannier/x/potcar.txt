@@ -1,0 +1,2 @@
+PAW_PBE Cr_pv 
+PAW_PBE I

@@ -1,0 +1,35 @@
+#dis_win_min = -10.323
+#dis_win_max = 2.677
+#dis_froz_min = -10.323
+#dis_froz_max = 0.17700000000000005
+kmesh_tol = 1e-04
+bands_plot_format = gnuplot
+num_bands = 56
+num_wann = 56
+bands_num_points = 410
+num_iter = 300
+search_shells = 24
+guiding_centres = true
+write_xyz = true
+bands_plot = true
+write_hr = true
+spinors= true
+exclude_bands=1-24, 81-96
+
+begin projections
+Cr: d
+I : p
+end projections
+
+begin kpoint_path
+X 0.5 0.0 0.0	GM 0.0 0.0 0.5
+GM 0.0 0.0 0.5	Y 0.0 0.5 0.0
+Y 0.0 0.5 0.0	S 0.5 0.5 0.0
+S 0.5 0.5 0.0	X 0.5 0.0 0.0
+X 0.5 0.0 0.0	R 0.5 0.5 0.5
+R 0.5 0.5 0.5	GM 0.0 0.0 0.0
+end kpoint_path
+
+
+
+

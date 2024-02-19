@@ -1,0 +1,9 @@
+Lattice vector  : 
+2.866   0  0
+0   -2.866  0
+0   0  -2.866
+
+Direct positions :  
+
+Fe 0 0 0
+Fe -0.5 -0.5 -0.5

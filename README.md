@@ -64,4 +64,12 @@ instead, the names of the paw potentials are in potcar.txt.
  BiFeO3 R3c structure. First do the calculation for rotated structures (BiFeO3_x, BiFeO3_y, BiFeO3_z). Run the getJ.sh in each of these subdirectories to the the TB2J_result for each. Then run the merge.sh script to get the merged result. 
 Note: the DFT hamiltonian files (siesta.nc) are not included because the files are too large. Run siesta in the DFT directory to get them. 
 
+## Abacus example
+
+### Fe Collinear
+ bcc cubic structure, calculated with PBE. 
+ run the getJ.sh command.
+
+
+
 

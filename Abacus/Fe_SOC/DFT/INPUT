@@ -1,0 +1,41 @@
+INPUT_PARAMETERS
+#Parameters (1.General)
+suffix                         Fe
+stru_file                      STRU
+kpoint_file                    KPT
+pseudo_dir                     ./
+orbital_dir                    ./
+calculation                    scf
+ntype                          1
+nspin                          4
+symmetry                       1
+noncolin                       0
+lspinorb                       1
+
+#Parameters (2.PW)
+ecutwfc                        100
+scf_thr                        1.0e-6
+init_chg                       atomic
+out_mul                        1
+out_chg                        0
+out_dos                        0
+out_band                       0
+out_mat_hs2                    1 #output H(R) and S(R) matrix
+
+#Parameters (4.Relaxation)
+ks_solver                      genelpa
+scf_nmax                       500
+out_bandgap                    0
+
+#Parameters (5.LCAO)
+basis_type                     lcao
+gamma_only                     0
+
+#Parameters (6.Smearing)
+smearing_method                gauss
+smearing_sigma                 0.001
+
+#Parameters (7.Charge Mixing)
+mixing_type                    broyden
+mixing_beta                    0.2
+#mixing_gg0                     0.1

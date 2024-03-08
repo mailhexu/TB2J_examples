@@ -13,10 +13,12 @@ guiding_centres = true
 write_xyz = true
 bands_plot = true
 write_hr = true
+write_tb =true
 
 begin projections
 O: p
-Mn: d
+Mn1: d
+Mn2: d
 end projections
 
 begin unit_cell_cart

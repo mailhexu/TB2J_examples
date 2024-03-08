@@ -15,34 +15,8 @@ bands_plot = true
 write_hr = true
 
 begin projections
-c=5.715,1.905,3.81: l=1, mr=1 		# O1|pz|None|None
-c=5.715,1.905,3.81: l=1, mr=2 		# O1|px|None|None
-c=5.715,1.905,3.81: l=1, mr=3 		# O1|py|None|None
-c=5.715,5.715,3.81: l=1, mr=1 		# O2|pz|None|None
-c=5.715,5.715,3.81: l=1, mr=2 		# O2|px|None|None
-c=5.715,5.715,3.81: l=1, mr=3 		# O2|py|None|None
-c=3.81,5.715,1.905: l=1, mr=1 		# O3|pz|None|None
-c=3.81,5.715,1.905: l=1, mr=2 		# O3|px|None|None
-c=3.81,5.715,1.905: l=1, mr=3 		# O3|py|None|None
-c=3.810000000000001,5.715,5.715000000000001: l=1, mr=1 		# O4|pz|None|None
-c=3.810000000000001,5.715,5.715000000000001: l=1, mr=2 		# O4|px|None|None
-c=3.810000000000001,5.715,5.715000000000001: l=1, mr=3 		# O4|py|None|None
-c=5.715,3.81,1.905: l=1, mr=1 		# O5|pz|None|None
-c=5.715,3.81,1.905: l=1, mr=2 		# O5|px|None|None
-c=5.715,3.81,1.905: l=1, mr=3 		# O5|py|None|None
-c=1.9050000000000002,3.8100000000000005,1.9050000000000007: l=1, mr=1 		# O6|pz|None|None
-c=1.9050000000000002,3.8100000000000005,1.9050000000000007: l=1, mr=2 		# O6|px|None|None
-c=1.9050000000000002,3.8100000000000005,1.9050000000000007: l=1, mr=3 		# O6|py|None|None
-c=1.905,1.905,1.905: l=2, mr=1 		# Mn1|dz2|None|None
-c=1.905,1.905,1.905: l=2, mr=2 		# Mn1|dxz|None|None
-c=1.905,1.905,1.905: l=2, mr=3 		# Mn1|dyz|None|None
-c=1.905,1.905,1.905: l=2, mr=4 		# Mn1|dx2-y2|None|None
-c=1.905,1.905,1.905: l=2, mr=5 		# Mn1|dxy|None|None
-c=5.715,5.715,5.715: l=2, mr=1 		# Mn2|dz2|None|None
-c=5.715,5.715,5.715: l=2, mr=2 		# Mn2|dxz|None|None
-c=5.715,5.715,5.715: l=2, mr=3 		# Mn2|dyz|None|None
-c=5.715,5.715,5.715: l=2, mr=4 		# Mn2|dx2-y2|None|None
-c=5.715,5.715,5.715: l=2, mr=5 		# Mn2|dxy|None|None
+O: p
+Mn: d
 end projections
 
 begin unit_cell_cart
